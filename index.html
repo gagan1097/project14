@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Gagan website</title>
+</head>
+<body>
+  <header class="topnav">
+  <img src="Gagan.png" width="200px" height="150px" alt="Company logo">
+  <a class="active" href="#home">Home</a>
+  <a href="#blog">Blog</a>
+   <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <div class="Searchbar">
+   <input type="text" placeholder="Type here.." name="search">
+  <button type="button" class="btn btn-primary">Search</button>
+</div>
+</header>
+  <main>
+    <section>
+      <div class="container"><h1>Click here to change modes</h1>
+    <h2 class="mode-status">Currently in Light Mode</h2>
+    <label class="toggle-switch">
+      <input type="checkbox" id="mode-toggle">
+      <span class="slider"></span>
+    </label>
+    </div>
+  <div class="heading">
+    <h1>Introduction</h1>
+      <div class="my_image">
+      <img src="Me.jpeg" alt="My image" style="float:right; height:400px;border-radius:60%;"></div>
+      <p class="subheadings">In this website you can find some interesting stuff. You can search for anything you would like to see on our website just like google.
+   This site will let you know about what is trending these days in the market. We want our customers to be happy so they can look for more trending stuff
+   selling online these days. Feel free to reach us using the form below.</p>
+    </section>
+  </div>
+    <div class="heading">
+    <section><h1>About Me</h1>
+    <p class="subheadings"> Hi, I am Gagan Sodhi. I am really excited about learning web development. I am very passionate about 
+      web development and in addition to that i wanted to create new web sites for betterment of society and exciting games and many more things.
+     I want to create new games and explore the world of web development. I have strong knowledge of HTML and CSS. I love to make new websites and want to
+  grow my future in the IT field. I love to learn new programming languages.<br> 
+  <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank">Click here to reach me on linkedin</a>
+    </p>
+  </div>
+    </section>
+    <div class="heading">
+    <section><h1>About this website</h1>
+    <p class="subheadings">Here you can find a navigation bar at the top where you can find home button, blog button, services provided by us and contact us. If you would like
+      to search for any product which is trending these days on social media or anywhere else. You can find that on this website. We will be here to always help you.
+    </p>
+    </div>
+    </section>
+    <div class="heading">
+    <section><h1>Blog</h1>
+    <p class="subheadings">I started my programming journey by doing correlation. I want to explore each and everything in web development. Right now, I am currently working at Amazon.<br>
+      I like to work there because i am learning new things by working there. I always wanted to join programming field. I love to do coding. I really love studying at correlation.<br>
+      I am learning new stuff everyday. Our Instructors and TA's are very good. They are really helpful.
+    </p>
+    </div>
+    </section>
+    <h1>Projects</h1>
+    <div class="grid-container">
+        <div class="grid-item"><h2>Project 1</h2>
+        <img src="miniproj1.png" width="350" height="300" alt="project image">
+        <p>To do List Project.</p>
+        <a href="https://gagan1097.github.io/mini-project1" target="_blank">Click here to see it!</a>
+    </div>
+        <div class="grid-item"><h2>Project 2</h2>
+            <img src="minicalc.png" width="350" height="300" alt="project image">
+            <p color="black">Mini Calculator Project</p>
+            <a href="https://gagan1097.github.io/minicalc/" target="_blank">Click here to see it!</a>
+        </div>
+        <div class="grid-item"><h2>Project 3</h2>
+            <img src="miniproj1.png" width="350" height="300" alt="project image">
+            <p>To do List Project.</p>
+            <a href="https://gagan1097.github.io/mini-project1" target="_blank">Click here to see it!</a>
+        </div>
+        </div>
+        <div id="map" style="width: 600px; height: 400px;"></div>
+        <div class="map1">
+          <p>Check how far is Niagra Falls from your city?</p>
+            <label>Your place</label>
+            <input id="origin" type="textbox" >
+            <label>Destination</label>
+            <input id="destination" type="textbox" value="Niagra Falls" disabled>
+            <input type="button" value="Search Route" class="btn btn-primary submit" onclick="calcRoute()">
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOAl3_W-1vn7HBJZfTLqr7zvmqGqGqUYY&callback=initMap&v=weekly"
+          defer></script>
+  </main>
+ <footer id="contact" style="padding: 30px; max-width: 40%; margin: 0 auto; background-color: rgb(104, 220, 201); border: 1px solid #ccc; margin-top: 20px; border-radius: 5px;">
+    <h2 style="color: #333;">Contact Me</h2>
+    <div id="form-submitted-msg">Form successfully submitted!</div>
+    <form id="form1" style="display: flex; flex-direction: column;">
+      <div class="input-group">
+      <label for="name" class="form-label"> First Name:</label>
+      <input type="text" id="name" name="name" class="form-control" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" required>
+      <small class="error-msg invalid-feedback">&nbsp; Required</small>
+    </div>
+    <div class="input-group">
+      <label for="name1" class="form-label"> Last Name:</label>
+      <input type="text" id="name1" name="name1" class="form-control" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" required>
+      <small class="error-msg invalid-feedback">&nbsp;Required</small>
+    </div> 
+      <div class="input-group">
+      <label for="email" class="form-label">Email Id: &nbsp; &nbsp; </label>
+      <input type="email" id="email" name="email" class="form-control" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" required>
+      <small class="error-msg invalid-feedback">&nbsp;Please enter a valid email id</small>
+    </div>
+    <div class="input-group">
+      <label for="message" class="form-label">Message: &nbsp; </label>
+      <textarea id="message" name="message" class="form-control" rows="5"  style="padding: 10px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" required></textarea>
+      <small class="error-msg invalid-feedback">&nbsp;Please enter valid message</small>
+    </div>  
+      <div class="form-btns">
+        <button type="submit" class="btn btn-primary submit" disabled>SUBMIT</button>
+        <button type="reset" class="btn btn-secondary">CLEAR FORM</button>
+      </div>
+    </form>
+  </footer>
+&copy 2023 GAGANSODHI751@GMAIL.COM
+  <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
